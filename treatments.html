@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Treatments | AAGA Naturopathy & Wellness</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Treatment Specialties</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="treatments.html">Treatments</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="treatment-list">
+      <h2>We Treat</h2>
+      <ul>
+        <li>Diabetes</li>
+        <li>Hypertension</li>
+        <li>Thyroid</li>
+        <li>PCOD / PCOS</li>
+        <li>Cervical</li>
+        <li>Constipation</li>
+        <li>Knee Pain</li>
+        <li>Back Pain</li>
+      </ul>
+    </section>
+    <section class="videos-section">
+  <h2>Treatment Videos</h2>
+  <div class="video-container">
+    <div class="video-box">
+      <h3>Electro Acupuncture</h3>
+      <video controls width="320" muted>
+        <source src="videos/electro_acupuncture.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-box">
+      <h3>Head Massage</h3>
+      <video controls width="320" muted>
+        <source src="videos/head_massage.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-box">
+      <h3>Dry Cupping</h3>
+      <video controls width="320" muted>
+        <source src="videos/dry_cupping.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>  <a href="https://www.instagram.com/aaga_wellness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> For view more videos of our treatment click here to visit our Instagtam</a>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer>
+    <p>© 2025 AAGA Wellness Center | Treatments</p>
+  </footer>
+  <script>
+    document.getElementById('video-upload').addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      if(file){
+        const video = document.getElementById('treatment-video');
+        video.src = URL.createObjectURL(file);
+        video.load();
+      }
+    });
+  </script>
+</body>
+</html>
+
